@@ -1,6 +1,8 @@
 window.onload = () => {
     let canvas = $$('canvas')
     let ctx = canvas.getContext('2d')
-    initApp(canvas, ctx)
+    if (window.initApp) {
+        initApp && initApp(canvas, ctx)
+    } 
 }
 

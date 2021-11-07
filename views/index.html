@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Canvas</title>
+        <link href="/css/common.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div class="container">
+            {{#list}}
+            <div class="module">
+                <div class="title">{{name}}</div>
+                <div class="list">
+                    {{#children}}
+                    <div class="item">
+                        <a href="/{{parentName}}/{{pureName}}">{{pureName}}</a>
+                    </div>
+                    {{/children}}
+                </div>
+            </div>
+            {{/list}}
+        </div>
+    </body>
+</html>

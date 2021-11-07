@@ -26,6 +26,7 @@ function initApp(canvas, ctx) {
 
     ctx.rect(140, 10, 40, 20)
 
+
     ctx.moveTo(20, 16)
     ctx.lineTo(100, 16)
     ctx.stroke()
